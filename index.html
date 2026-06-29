@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>رزين | أزياء محتشمة فاخرة</title>
+  <meta name="description" content="رزين — أزياء إسلامية نسائية محتشمة تجمع بين الأناقة العصرية والوقار. عبايات، خُمُر، شالات، ونقابات بخامات فاخرة وتفصيل يدوي." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Playfair+Display:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <!-- left: utility icons -->
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="حقيبة التسوق" data-icon="bag"></button>
+        <button class="icon-btn" aria-label="الحساب" data-icon="user"></button>
+        <button class="icon-btn nav-toggle" aria-label="القائمة" id="navToggle" data-icon="menu"></button>
+      </div>
+
+      <!-- center: navigation -->
+      <nav class="main-nav" id="mainNav" aria-label="التنقل الرئيسي">
+        <ul class="nav-list" id="navList"><!-- JS --></ul>
+      </nav>
+
+      <!-- right: logo -->
+      <a href="#" class="brand" aria-label="رزين">
+        <span class="brand-ar">رزين</span>
+        <span class="brand-en">RAZEEN</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== SHARED SCENE: hero + collections scroll over one continuous background ===== -->
+    <div class="scene">
+      <div class="scene-bg" aria-hidden="true">
+        <img src="assets/section_1.png" alt="" />
+        <span class="scene-scrim"></span>
+      </div>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="container">
+       <div class="hero-content">
+        <span class="hero-kicker">فنُّ الاحتشام</span>
+        <h1 class="hero-title">الأناقة</h1>
+        <p class="hero-lead">الوقار... جمالٌ لا يحتاج إلى لفت الأنظار</p>
+        <p class="hero-text">
+          نؤمن أن الحجاب والعباءة ليسا مجرد لباس، بل تعبيرٌ عن
+          <em>الحياء والعفة والالتزام</em>. نصمم قطعًا تجمع بين الستر، والراحة،
+          وجودة التفاصيل.
+        </p>
+        <div class="hero-actions">
+          <a href="#collections" class="btn btn-primary">اكتشفي <span>المجموعة</span></a>
+          <a href="#story" class="btn btn-ghost">
+            <span class="play-circle" data-icon="play"></span>
+            مشاهدة الفيديو
+          </a>
+        </div>
+       </div>
+      </div>
+
+      <!-- stats + trust bar -->
+      <div class="container hero-bar-wrap">
+        <div class="hero-bar">
+          <div class="bar-stats" id="heroStats"><!-- JS --></div>
+          <div class="bar-trust" id="heroTrust"><!-- JS --></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COLLECTIONS ============ -->
+    <section class="collections" id="collections">
+      <div class="collections-head">
+        <div class="container">
+          <div class="section-head center reveal">
+            <span class="eyebrow">اكتشفي عالم رزين</span>
+            <h2 class="section-title">تسوّقي المجموعات</h2>
+            <p class="section-sub">كل مجموعة صُممت بعناية لترافقك في كل لحظة من يومك.</p>
+            <span class="divider" data-icon="bloom"></span>
+          </div>
+        </div>
+      </div>
+      <div class="collection-cards" id="collectionGrid"><!-- JS --></div>
+    </section>
+    </div><!-- /.scene -->
+
+    <!-- ============ WHY RAZEEN ============ -->
+    <section class="section why" id="why">
+      <div class="why-bg">
+        <img src="assets/why_razeen_back.png" alt="" aria-hidden="true" />
+      </div>
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow eyebrow--en">WHY RAZEEN</span>
+          <h2 class="section-title">لماذا رزين؟</h2>
+          <span class="divider" data-icon="bloom"></span>
+          <p class="section-sub why-sub">
+            نؤمن أن العباءة ليست مجرد لباس، بل هي امتداد لهوية المرأة المسلمة.
+            لهذا حرصنا على أن تكون كل قطعة من رزين مختلفة في تفاصيلها، واحدة في جوهرها.
+          </p>
+        </div>
+        <div class="why-grid" id="whyGrid"><!-- JS --></div>
+      </div>
+      <div class="container why-foot">
+        <span class="why-wordmark">RAZEEN</span>
+        <span class="brand-divider"><i></i><span data-icon="bloom"></span><i></i></span>
+      </div>
+    </section>
+
+    <!-- ============ WORLDS OF RAZEEN ============ -->
+    <section class="section worlds" id="worlds">
+      <div class="worlds-bg" aria-hidden="true">
+        <img src="assets/worled.png" alt="" />
+        <span class="worlds-scrim"></span>
+      </div>
+      <div class="container">
+        <div class="section-head center reveal worlds-head">
+          <span class="eyebrow eyebrow--en">WORLDS OF RAZEEN</span>
+          <h2 class="section-title">عُوالم رَزين</h2>
+          <span class="divider" data-icon="bloom"></span>
+          <p class="section-sub worlds-sub">
+          ﴿ وَلِبَاسُ التَّقْوَىٰ ذَٰلِكَ خَيْرٌ ﴾<br />
+          اكتشفي عباءاتٍ وخُمُرًا صُمِّمت لتجتمع فيها
+          الستر، والوقار، والأناقة...
+          وفق هدي الإسلام في لباس المرأة.
+          </p>
+        </div>
+        <div class="worlds-grid" id="worldsGrid"><!-- JS --></div>
+      </div>
+
+      <!-- pointed-arch clip path (objectBoundingBox → responsive) -->
+      <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+        <defs>
+          <clipPath id="worldArch" clipPathUnits="objectBoundingBox">
+            <path d="M0,1 L0,0.28 Q0.02,0.10 0.5,0 Q0.98,0.10 1,0.28 L1,1 Z" />
+          </clipPath>
+        </defs>
+      </svg>
+    </section>
+
+    <!-- ============ FAYD (PRODUCTS) ============ -->
+    <section class="section fayd" id="shop">
+      <div class="fayd-bg" aria-hidden="true">
+        <img src="assets/item_back.png" alt="" />
+        <span class="fayd-scrim"></span>
+      </div>
+      <div class="container">
+        <div class="section-head center reveal fayd-head">
+          <span class="eyebrow eyebrow--en">RAZEEN</span>
+          <h2 class="section-title">فيض الجمال</h2>
+          <span class="divider" data-icon="bloom"></span>
+          <p class="section-sub">
+            تشكيلة مختارة بعناية من العبايات والشالات والخُمُر،
+            صُمِّمت لتجمع بين الستر الشرعي والجمال الراقي.
+          </p>
+        </div>
+
+        <!-- floating filter bar -->
+        <div class="fayd-toolbar reveal">
+          <span class="fbar-tag"><span data-icon="sliders"></span> تصفية</span>
+          <div class="fbar-filters" id="filterBar"><!-- JS --></div>
+          <button class="fbar-reset" id="filterReset" type="button">
+            <span data-icon="refresh"></span> إعادة ضبط
+          </button>
+        </div>
+
+        <!-- sort + count -->
+        <div class="fayd-subbar reveal">
+          <div class="fbar-sort" id="filterSort"><!-- JS --></div>
+          <span class="fayd-count" id="prodCount"></span>
+        </div>
+
+        <!-- product grid (single horizontal row) -->
+        <div class="product-grid" id="productGrid"><!-- JS --></div>
+
+        <!-- rail navigation: arrows + dots -->
+        <div class="product-nav" id="productNav">
+          <button class="pnav-btn" id="pnavPrev" type="button" aria-label="السابق" data-icon="chevronR"></button>
+          <div class="pnav-dots" id="pnavDots"><!-- JS --></div>
+          <button class="pnav-btn" id="pnavNext" type="button" aria-label="التالي" data-icon="chevronL"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BESPOKE / SPECIAL ORDER ============ -->
+    <section class="section special" id="bespoke">
+      <div class="special-bg" aria-hidden="true">
+        <img src="assets/special_back.png" alt="" />
+        <span class="special-scrim"></span>
+      </div>
+      <div class="container">
+        <div class="special-panel reveal">
+          <span class="divider special-top" data-icon="bloom"></span>
+          <h2 class="special-title">الطلب الخاص</h2>
+          <p class="special-sub">
+            قطعة تُصمم لكِ، كما تتخيلين.<br />
+            اختاري القماش، اللون، التصميم، والقياسات...<br />
+            ونحن نحوّل رؤيتكِ إلى قطعة فريدة تعكسكِ.
+          </p>
+          <div class="special-steps" id="specialSteps"><!-- JS --></div>
+          <span class="divider special-rule" data-icon="bloom"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SPIRITUAL ESSENCE ============ -->
+    <section class="section spiritual" id="essence">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow eyebrow--en">SPIRITUAL ESSENCE</span>
+          <h2 class="section-title">روحانية التصميم</h2>
+          <span class="divider divider--line"></span>
+          <p class="spiritual-quote">”جمال الحشمة .. ستر ووقار“</p>
+          <p class="section-sub spiritual-sub">
+            نستلهم تصاميمنا من قيمنا الإسلامية الأصيلة، حيث يلتقي الجمال مع
+            الاحتشام. كل قطعة نصممها هي احتفاء بـ ”الستر“ الذي يبرز رقي المرأة
+            ويحفظ وقارها، مجسداً توازناً مثالياً بين الأناقة العصرية والتقاليد
+            العريقة.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BRAND STORY ============ -->
+    <section class="story" id="story">
+      <div class="story-bg" aria-hidden="true">
+        <img src="assets/story_back.png" alt="" />
+        <span class="story-scrim"></span>
+      </div>
+      <div class="container">
+        <div class="story-panel reveal">
+          <span class="divider story-top" data-icon="bloom"></span>
+          <span class="story-eyebrow">حكاية رزين</span>
+          <h2 class="story-title">سِتْرٌ يُرضِي الله<br />ويَصونُ الجَمال</h2>
+          <p class="story-lead">
+            نؤمن أن الحجاب عبادة، وأن اللباس سترٌ ورحمة.<br />
+            نُصمّم لكل امرأةٍ تريد أن تُرضي الله،
+            وتحفظ جمالها في وقارٍ وأناقة.
+          </p>
+          <blockquote class="story-hadith">
+            <span class="story-hadith-intro">قال رسول الله ﷺ</span>
+            «الحَياءُ والإيمانُ قُرِنا جميعًا، فإذا رُفِعَ أحدُهما رُفِعَ الآخَر»
+            <cite class="story-hadith-src">رواه الحاكم</cite>
+          </blockquote>
+          <span class="divider story-bot" data-icon="bloom"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VISIT US ============ -->
+    <section class="section visit" id="visit">
+      <div class="container visit-layout">
+        <div class="visit-map reveal">
+          <span class="map-crown" data-icon="bloom" aria-hidden="true"></span>
+          <div class="map-inner">
+            <iframe
+              src="https://maps.google.com/maps?q=35.9306,36.6339(%D8%B3%D9%88%D9%82%20%D8%A7%D9%84%D8%B5%D8%A7%D8%BA%D8%A9%20-%20%D8%A5%D8%AF%D9%84%D8%A8)&z=16&hl=ar&output=embed"
+              title="موقع رزين — سوق الصاغة، إدلب، سوريا"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen></iframe>
+          </div>
+          <span class="map-corner map-corner--tl" data-icon="mapCorner" aria-hidden="true"></span>
+          <span class="map-corner map-corner--tr" data-icon="mapCorner" aria-hidden="true"></span>
+          <span class="map-corner map-corner--bl" data-icon="mapCorner" aria-hidden="true"></span>
+          <span class="map-corner map-corner--br" data-icon="mapCorner" aria-hidden="true"></span>
+        </div>
+        <div class="visit-info reveal">
+          <span class="eyebrow eyebrow--en">VISIT US</span>
+          <h2 class="section-title">موقعنا</h2>
+          <p class="section-sub">
+            يسعد بزيارتكم في البوتيك الخاص بنا لاكتشاف أحدث المجموعات وتجربة خدمة
+            التفصيل المخصص.
+          </p>
+          <ul class="visit-list">
+            <li>
+              <span class="visit-ic" data-icon="pin"></span>
+              <div>
+                <strong>العنوان</strong>
+                <span>سوريا , ادلب , سوق الصاغة</span>
+              </div>
+            </li>
+            <li>
+              <span class="visit-ic" data-icon="clock"></span>
+              <div>
+                <strong>ساعات العمل</strong>
+                <span>السبت - الخميس: 10 صباحاً - 10 مساءً</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <section class="footer-top">
+      <span class="footer-back" aria-hidden="true"><img src="assets/footer_back.png" alt="" /></span>
+      <div class="container footer-grid" id="footerGrid"><!-- JS --></div>
+      <span class="footer-notch" aria-hidden="true">
+        <svg viewBox="0 0 140 46" preserveAspectRatio="none"><path d="M0,0 H140 Q104,6 86,30 Q78,42 70,46 Q62,42 54,30 Q36,6 0,0 Z" /></svg>
+      </span>
+    </section>
+
+    <section class="footer-bar">
+      <div class="container">
+        <div class="footer-meta">
+          <div class="footer-pay" id="footPay"><!-- JS --></div>
+          <p class="footer-copy"><span class="copy-orn" data-icon="ornament"></span>جميع الحقوق محفوظة © رزين 2026</p>
+          <span class="footer-love">مصمَّم بحبٍّ لإرضاء الله <span class="love-ic" data-icon="heart"></span></span>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <script src="js/main.js"></script>
+
+
+
+
+
+</body>
+</html>
